@@ -47,17 +47,62 @@ public class Main {
 
     static List<String> ex3() {
         List<String> listOfPlanets = new ArrayList<>();
-        listOfPlanets.add("Меркурий"); listOfPlanets.add("Венера"); listOfPlanets.add("Меркурий");
-        listOfPlanets.add("Земля"); listOfPlanets.add("Уран"); listOfPlanets.add("Меркурий");
-        listOfPlanets.add("Венера"); listOfPlanets.add("Сатурн"); listOfPlanets.add("Марс");
-        listOfPlanets.add("Сатурн"); listOfPlanets.add("Юпитер"); listOfPlanets.add("Земля");
-        listOfPlanets.add("Уран"); listOfPlanets.add("Сатурн"); listOfPlanets.add("Марс");
-        listOfPlanets.add("Земля"); listOfPlanets.add("Марс"); listOfPlanets.add("Нептун");
+        listOfPlanets.add("Меркурий");
+        listOfPlanets.add("Венера");
+        listOfPlanets.add("Меркурий");
+        listOfPlanets.add("Земля");
+        listOfPlanets.add("Уран");
+        listOfPlanets.add("Меркурий");
+        listOfPlanets.add("Венера");
+        listOfPlanets.add("Сатурн");
+        listOfPlanets.add("Марс");
+        listOfPlanets.add("Сатурн");
+        listOfPlanets.add("Юпитер");
+        listOfPlanets.add("Земля");
+        listOfPlanets.add("Уран");
+        listOfPlanets.add("Сатурн");
+        listOfPlanets.add("Марс");
+        listOfPlanets.add("Земля");
+        listOfPlanets.add("Марс");
+        listOfPlanets.add("Нептун");
 
         System.out.println(listOfPlanets);
-
-
-
+        int sum1 = 0; int sum2 = 0; int sum3 = 0; int sum4 = 0;
+        int sum5 = 0; int sum6 = 0; int sum7 = 0; int sum8 = 0;
+        for (int i = 0; i < listOfPlanets.size(); i++) {
+            if (listOfPlanets.get(i) == "Меркурий") {
+                sum1 += 1;
+            }
+            if (listOfPlanets.get(i) == "Венера") {
+                sum2 += 1;
+            }
+            if (listOfPlanets.get(i) == "Земля") {
+                sum3 += 1;
+            }
+            if (listOfPlanets.get(i) == "Марс") {
+                sum4 += 1;
+            }
+            if (listOfPlanets.get(i) == "Сатурн") {
+                sum5 += 1;
+            }
+            if (listOfPlanets.get(i) == "Юпитер") {
+                sum6 += 1;
+            }
+            if (listOfPlanets.get(i) == "Уран") {
+                sum7 += 1;
+            }
+            if (listOfPlanets.get(i) == "Нептун") {
+                sum8 += 1;
+            }
+        }
+        System.out.printf("Меркурий = %d\n", sum1);
+        System.out.printf("Венера = %d\n", sum2);
+        System.out.printf("Земля = %d\n", sum3);
+        System.out.printf("Марс = %d\n", sum4);
+        System.out.printf("Сатурн = %d\n", sum5);
+        System.out.printf("Юпитер = %d\n", sum6);
+        System.out.printf("Уран = %d\n", sum7);
+        System.out.printf("Нептун = %d\n", sum8);
         return listOfPlanets;
     }
 
